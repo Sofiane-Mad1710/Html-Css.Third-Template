@@ -943,7 +943,7 @@ a{
 	-ms-transform: translateX(-50% );
 	-o-transform: translateX(-50% );
 	height: 3px;
-	top: -3px;
+	top: -0px;
 	background-color: var(--main-color);
 	width: 0%;
 	transition: var(--main-transition);
