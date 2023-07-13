@@ -1024,6 +1024,81 @@ a{
 	-o-transform: skewX(-30deg);
 }
 /* end services */
+/* start skills  */
+.our-skills{
+	padding-top:var(--main-padding) ;
+	padding-bottom:var(--main-padding) ;
+	position: relative;
+}
+.our-skills .container{
+	display: flex;
+	align-items: center;
+}
+@media (max-width:991px) {
+	.our-skills img{
+		display: none;
+	}
+	
+}
+.our-skills .skills{
+	flex: 1;
+}
+.our-skills .skill h3{
+	display:flex ;
+	justify-content: space-between;
+	align-items: center;
+}
+.our-skills .skill  h3 span{
+	font-size: 14px;
+	border: 1px solid #ccc;
+	padding: 3px 5px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	color: var(--main-color);
+	visibility: hidden;
+	transition-delay:  0.6s;
+	-webkit-transition:;
+	-moz-transition:;
+	-ms-transition:;
+	-o-transition:;
+}
+.our-skills:hover .skill  h3 span{
+	visibility: visible;
+}
+.our-skills .skill  .progress {
+	height: 25px;
+	background-color: #eee;
+	position: relative;
+}
+.our-skills .skill  .progress span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0 !important;
+	background-color: var(--main-color);
+	transition: 0.6s ease-out;
+	-webkit-transition: 0.6s ease-out;
+	-moz-transition: 0.6s ease-out;
+	-ms-transition: 0.6s ease-out;
+	-o-transition: 0.6s ease-out;
+}
+.our-skills:hover .skill  .progress .first{
+	width: 93% !important ;
+}
+.our-skills:hover .skill  .progress .second{
+	width: 90% !important ;
+}
+.our-skills:hover .skill  .progress .third{
+	width: 78% !important ;
+}
+.our-skills:hover .skill  .progress .fourth{
+	width: 80% !important ;
+}
+/* end skills  */
 
 
 
