@@ -51,74 +51,47 @@ a{
 	text-decoration: none;
 
 }
-.main-title{
-	margin: 0px auto 100px;
-	border: 2px solid black;
-	padding: 10px 20px;
-	font-size: 30px;
-	width: fit-content;
-	position: relative;
-	transition: var(--main-transition);
-	-webkit-transition: var(--main-transition);
-	-moz-transition: var(--main-transition);
-	-ms-transition: var(--main-transition);
-	-o-transition: var(--main-transition);
-	z-index: 1;
+.main-title {
+  text-transform: uppercase;
+  margin: 0 auto 80px;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 30px;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+  transition: var(--main-transition);
 }
-.main-title:hover{
-	color: white;
-	border: var(--main-color) solid 2px;
-	transition-delay: 0.3s;
+.main-title::before,
+.main-title::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-color);
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.main-title::before{
-	content: "";
-	width: 12px;
-	height: 12px;
-	position: absolute;
-	background-color: var(--main-color);
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	left: -30px;
-	top: 50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
+.main-title::before {
+  left: -30px;
 }
-.main-title::after{
-	content: "";
-	width: 12px;
-	height: 12px;
-	position: absolute;
-	background-color: var(--main-color);
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	right: -30px;
-	top: 50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
+.main-title::after {
+  right: -30px;
 }
-.main-title:hover::before{
-	z-index: -1;
-	animation: left-move 0.3s linear  forwards ;
-	-webkit-animation: left-move 0.3s linear  forwards ;
+.main-title:hover::before {
+  z-index: -1;
+  animation: left-move 0.5s linear forwards;
 }
-.main-title:hover::after{
-	z-index: -1;
-	animation: right-move 0.3s linear  forwards ;
-	-webkit-animation: right-move 0.3s linear  forwards ;
+.main-title:hover::after {
+  z-index: -1;
+  animation: right-move 0.5s linear forwards;
 }
-
+.main-title:hover {
+  color: white;
+  border: 2px solid var(--main-color);
+  transition-delay: 0.5s;
+}
 /* end global rules  */
 /* start header */
 .header{
@@ -126,7 +99,7 @@ a{
 	box-shadow: 0 0 10px #ddd;
 	position: sticky;
 	top: 0;
-	z-index: 100;
+	z-index: 3;
 }
 
 .header .container{
@@ -173,11 +146,6 @@ a{
 	top: calc(100% + 2px);
 	z-index: 1;
 	display: flex;
-	transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-ms-transition: 0.5s;
-	-o-transition: 0.5s;
 }
 .header .main-nav > li > a {
 	display: flex;
