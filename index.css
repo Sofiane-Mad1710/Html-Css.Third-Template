@@ -63,6 +63,7 @@ a{
 	-moz-transition: var(--main-transition);
 	-ms-transition: var(--main-transition);
 	-o-transition: var(--main-transition);
+	z-index: 1;
 }
 .main-title:hover{
 	color: white;
