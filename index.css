@@ -737,7 +737,7 @@ a{
 	border: 8px solid var(--background-color);
 	transition-duration: 0.3s;
 	transition-delay: transform 0.3s;
-	z-index: 4;
+	z-index: 1;
 }
 .testimonials .box h3{
 	margin: 0 0 10px;
