@@ -1,6 +1,7 @@
 /* start global rules */
 :root{
-	--main-color:#2196f3;
+	--main-color:#c70101;
+	/* --main-color:#2196f3; */
 	--main-color-alt:#1787e0;
 	--main-transition:0.3s;
 	--main-padding:100px;
@@ -392,7 +393,7 @@ a{
 	font-size: 30px;
 }
 .landing .go-down:hover{
-	color: var(--main-color-alt);
+	color: var(--main-color);
 
 }
 .landing .go-down i{
@@ -503,7 +504,7 @@ a{
 	font-weight: bold;
 }
 .articles .box .info a:hover{
-	color: var(--main-color-alt);
+	color: var(--main-color);
 }
 .articles .box .info i{
 	color: var(--main-color);
@@ -869,7 +870,7 @@ a{
 	-moz-transform: scale(2);
 	-ms-transform: scale(2);
 	-o-transform: scale(2);
-	color: var(--main-color-alt);
+	color: var(--main-color);
 }
 .team .container .box .info{
 	padding-left: 65px;
@@ -891,6 +892,8 @@ a{
 	margin-top: 10px;
 	margin-bottom: 25px;
 	font-size: 18px;
+	direction: rtl;
+	padding: 10px ;
 }
 /* end team  */
 /* start services */
@@ -1089,9 +1092,7 @@ a{
 	flex-direction: column;
 	gap: 30px;
 }
-	
 }
-
 .work-steps .image{
 	max-width: 100%;
 	margin-right: 100px;
@@ -1100,8 +1101,7 @@ a{
 	.work-steps .image{
   margin: 0 0 50px;
 	}
-		
-	}
+}
 .work-steps .info .box{
 	background-color: #f5F5F5;
 	padding: 30px;
@@ -1150,7 +1150,7 @@ a{
 	.work-steps .info .box{
 		flex-direction: column;
 	}
-	}
+}
 .work-steps .info .box::before {
 	content: "";
 	position: absolute;
@@ -1183,7 +1183,7 @@ a{
 	.work-steps .info .box img{
   margin: 0 auto 15px;
 	}
-	}
+}
 .work-steps .info .box h3{
 	margin: 0;
 	font-size: 22px;
@@ -1199,7 +1199,7 @@ a{
   .work-steps .info .box p{
   text-align: center;
 	}
-	}
+}
 /* end work steps */
 /* start events */
 .events{
@@ -1218,8 +1218,7 @@ a{
 @media (max-width:991px) {
 .events img{
 	display: none;
-}
-	
+  }
 }
 .events .info{
 	flex: 1;
@@ -1246,7 +1245,6 @@ a{
 	-ms-transition: var(--main-transition);
 	-o-transition: var(--main-transition);
 	font-family:'Tektur', cursive;
-
 }
 .events .info .time .unit span:first-child{
 	display: block;
@@ -1264,7 +1262,6 @@ a{
 	-moz-transition: var(--main-transition);
 	-ms-transition: var(--main-transition);
 	-o-transition: var(--main-transition);
-
 }
 .events .info .time .unit:hover,
 .events .info .time .unit:hover span:last-child{
@@ -1279,7 +1276,6 @@ a{
 	text-align: center;
 	line-height: 1.7;
 	color: #777;
-	
 	font-size: 19px;
 }
 .events .subscribe{
@@ -1310,8 +1306,7 @@ a{
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
-}
-	
+  }
 }
 .events .subscribe form input[type="email"]{
 	padding: 20px;
@@ -1333,12 +1328,10 @@ a{
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  }
 }
-		
-	}
 .events .subscribe form input[type="email"]:focus{
 	outline: none;
-
 }
 .events .subscribe form input[type="email"]::placeholder{
 	color: #777;
@@ -1379,8 +1372,8 @@ a{
   -o-border-radius: 20px;
 	width: 150px;
 	margin: auto;
+  }
 }
-	}
 .events .subscribe form input:last-child:hover{
 	background-color:transparent;
 	color: var(--main-color);
@@ -1433,7 +1426,6 @@ a{
 .pricing .box:hover::after{
 	width: 100%;
 	height: 50%;
-  
 }
 .pricing .box::before{
 	left: 0;
@@ -1462,7 +1454,6 @@ a{
 	width: 40px;
 	font-family:'Tektur', cursive;
 	cursor: default;
-
 }
 .pricing .box.popular .label:before{
 	content: '';
@@ -1495,7 +1486,6 @@ a{
 	font-size: 25px;
 	letter-spacing:-1px ;
 	cursor: default;
-
 }
 .pricing .box img{
 	width: 80px;
@@ -1504,7 +1494,6 @@ a{
 .pricing .box .price{
 	margin-bottom: 20px;
 	cursor: default;
-
 }
 .pricing .box .price > span:first-child{
 	display: block;
@@ -1521,7 +1510,6 @@ a{
 .pricing .box ul{
 	text-align: left;
 	cursor: default;
-
 }
 .pricing .box ul li{
 	padding: 20px;
@@ -1572,8 +1560,7 @@ a{
 @media (max-width:991px) {
 .videos .holder{
 	flex-direction: column-reverse;
-}
-	
+  }
 }
 .videos .holder .list{
 	min-width: 300px;
@@ -1602,8 +1589,6 @@ a{
 .videos .holder .list ul li:last-child{
 	color: var(--main-color);
 	background-color: #f3f3f3;
-
-
 }
 .videos .holder .list ul li::before{
 	position: absolute;
@@ -1637,7 +1622,6 @@ a{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
 }
 .videos .holder .preview video{
 	max-width: 100%;
@@ -1648,6 +1632,101 @@ a{
 	margin-top: 10px;
 }
 /* end video */
+/* start stats  */
+.stats{
+	padding-top: var(--main-padding);
+	padding-bottom: var(--main-padding);
+	position: relative;
+	background-image: url(stats.jpg);
+	background-size: cover;
+	min-height: 300px;
+}
+.stats::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #ecececda;
+}
+.stats .container{
+	display:grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 30px;
+}
+.stats .box{
+	background-color: white;
+	padding: 30px 15px;
+	text-align: center;
+	position: relative;
+	opacity:0.8;
+	transition: var(--main-transition);
+	-webkit-transition: var(--main-transition);
+	-moz-transition: var(--main-transition);
+	-ms-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	cursor: default;
+}
+.stats .box:hover{
+	opacity: 1;
+	transform: translateY(-10px);
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	-o-transform: translateY(-10px);
+}
+.stats .box::after,
+.stats .box::before{
+	content: "";
+	position: absolute;
+	width: 2px;
+	background-color: var(--main-color);
+	height: 0%;
+	transition:0.5s;
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-ms-transition:0.5s;
+	-o-transition:0.5s;
+}
+.stats .box::before{
+	bottom: 0;
+	left: -2px;
+}
+.stats .box::after{
+	top: 0;
+	right: -2px;
+}
+.stats .box:hover:after,
+.stats .box:hover::before{
+	height: 100%;
+}
+.stats .box i{
+	transition: var(--main-transition);
+	-webkit-transition: var(--main-transition);
+	-moz-transition: var(--main-transition);
+	-ms-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+}
+.stats .box:hover i{
+	color: var(--main-color);
+}
+.stats .box .number{
+	display: block;
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family:'Tektur', cursive;
+
+}
+.stats .box .text{
+	color: var(--main-color);
+	font-style: italic;
+	font-size: 20px;
+	font-weight: bold;
+}
+/* end stats  */
 
 
 
